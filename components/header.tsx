@@ -74,28 +74,27 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg border-t">
           <div className="px-4 py-2 space-y-2">
-            <button className="flex items-center w-full py-2 text-gray-600 hover:text-orange-500 transition-colors">
-              <Home className="w-4 h-4 mr-2" />
+            <Link href="/" className="text-orange-500 font-semibold">
               Trang chủ
-            </button>
-            <a
-              href="#dich-vu"
-              className="block py-2 text-orange-500 font-semibold"
-            >
+            </Link>
+            <Link href="/dich-vu" className="text-orange-500 font-semibold">
               Dịch vụ
-            </a>
-            <a
-              href="#bang-gia"
-              className="block py-2 text-gray-600 hover:text-orange-500 transition-colors"
+            </Link>
+            <Link
+              href="/bang-gia"
+              className="text-gray-600 hover:text-orange-500 transition-colors"
             >
               Bảng giá
-            </a>
-            <a
-              href="#lien-he"
-              className="block py-2 text-gray-600 hover:text-orange-500 transition-colors"
+            </Link>
+            <Link
+              href="/lien-he"
+              className="text-gray-600 hover:text-orange-500 transition-colors"
             >
               Liên hệ
-            </a>
+            </Link>
+            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors">
+              Đặt ngay
+            </button>
           </div>
         </div>
       )}
